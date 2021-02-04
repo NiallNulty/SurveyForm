@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id ="main">
+  
+<div id = "title-container">  
+ <h1 id="title">Niall Nulty's Survey Form</h1>
+ <p id="description">Thanks for your support!</p>
+</div>
+ 
+ <div id="form-container"> 
+ <form id = "survey-form" action="#">
+   
+   <label id ="name-label" for="name">Name</label>
+   <br>
+   
+   <input id="name" type="text" placeholder=" Enter your name *" required>
+   <br>
+   
+   <label id="email-label" for="email">Email</label>
+   <br>
+   
+   <input id="email" type="email" placeholder=" Enter your Email *" required>
+   <br>
+   <label id="number-label" for="number">Age (optional)</label>
+   <br>
+   
+   <input id="number" type="number" placeholder=" Age" min="0" max="100">
+   <br>
+   
+    <label for="roles">What is your current role?</label>
+   <br>
+    <select name="role" id="dropdown" required>
+    <option disabled selected value>Select an option *</option>
+    <option value="student">Student</option>
+    <option value="fullTimeJob">Full Time Job</option>
+    <option value="preferNotToSay">Prefer Not To Say</option>
+    <option value="other">Other</option>
+  </select>
+   
+   <br>
+   <label id ="radio-label" for="emotion">How do you feel about this role?</label>
+   <br>
+   <div id=radio-container>
+   <label class="radio-button-label" for ="happy">
+  <input type="radio" name="emotion" value="happy">Happy</label>
+
+     <label class="radio-button-label" for ="content">
+       <input type="radio" name="emotion" value="content">Content</label>
+
+    <label class="radio-button-label" for ="Unhappy">
+  <input type="radio" name="emotion" value="unhappy">Unhappy</label>
+   </div>
+   <br>
+   
+
+    <label id ="checkbox-label" for="personality">Pick one or more that best describes you</label>
+   <br>
+   <div>
+     <div  id="checkbox-container">
+<label for="loving"><input id="athletic" type="checkbox" name="personality" value="athletic"> Athletic</label>
+    <label for="lazy"><input id="artistic" type="checkbox" name="personality" value="artistic"> Artistic</label>
+    <label for="gamer"><input id="gamer" type="checkbox" name="personality" value="gamer">Gamer</label> 
+    <label for="funny"><input id="funny" type="checkbox" name="personality" value="funny">Funny</label> 
+    <label for="helpful"><input id="helpful" type="checkbox" name="personality" value="helpful">Helpful</label> 
+    <label for="calm"><input id="calm" type="checkbox" name="personality" value="calm">Calm</label> 
+       </div>
+   </div>
+   <br>
+
+   
+    <label id="message-label" for="message">Additional Comments</label>
+   <br>
+      <textarea name="message" id="message" rows="10"></textarea>   
+   <br>
+   
+   <button id="submit" type="submit">Submit</button>
+    <br>
+ </form>
+ </form-container>  
+</main>
+</body>
+</html>
